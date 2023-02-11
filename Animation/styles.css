@@ -1,0 +1,248 @@
+p{
+    padding: 0px;
+    margin: 4px;
+}
+/* packman */
+.pacman{
+    position: relative;
+    left: 50vw;
+    top: -150px;
+}
+img {
+    width: 50px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    z-index: 99;
+}
+
+img {
+    animation-name: pacman;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1.9s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+}
+
+.dot-1 {
+    top: 125px;
+    left: 225px;
+    animation: eat 4s infinite;
+    animation-delay: 2s;
+}
+
+.dot-2 {
+    top: 125px;
+    left: 325px;
+    animation: eat 4s infinite;
+    animation-delay: 2.2s;
+}
+
+.dot-3 {
+    top: 125px;
+    left: 425px;
+    animation: eat 4s infinite;
+    animation-delay: 2.4s;
+}
+
+.dot-4 {
+    top: 125px;
+    left: 525px;
+    animation: eat 4s infinite;
+    animation-delay: 2.6s;
+}
+
+.dot-5 {
+    top: 125px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 2.8s;
+}
+
+.dot-6 {
+    top: 225px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 3s;
+}
+
+.dot-7 {
+    top: 325px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 3.2s;
+}
+
+.dot-8 {
+    top: 425px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 3.4s;
+}
+
+.dot-9 {
+    top: 525px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 3.6s;
+}
+
+.dot-10 {
+    top: 625px;
+    left: 625px;
+    animation: eat 4s infinite;
+    animation-delay: 3.8s;
+}
+
+.dot-11 {
+    top: 625px;
+    left: 525px;
+    animation: eat 4s infinite;
+    animation-delay: 4s;
+}
+
+.dot-12 {
+    top: 625px;
+    left: 425px;
+    animation: eat 4s infinite;
+    animation-delay: 4.2s;
+}
+
+.dot-13 {
+    top: 625px;
+    left: 325px;
+    animation: eat 4s infinite;
+    animation-delay: 4.4s;
+}
+
+.dot-14 {
+    top: 625px;
+    left: 225px;
+    animation: eat 4s infinite;
+    animation-delay: 4.6s;
+}
+
+.dot-15 {
+    top: 625px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 4.8s;
+}
+
+.dot-16 {
+    top: 525px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 5s;
+}
+
+.dot-17 {
+    top: 425px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 5.2s;
+}
+
+.dot-18 {
+    top: 325px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 5.4s;
+}
+
+.dot-19 {
+    top: 225px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 5.6s;
+}
+
+.dot-20 {
+
+    top: 125px;
+    left: 125px;
+    animation: eat 4s infinite;
+    animation-delay: 5.8s;
+}
+
+@keyframes pacman {
+    0% {
+        top: 100px;
+        left: 100px;
+    }
+
+    25% {
+        top: 100px;
+        left: 600px;
+        transform: rotate(0deg);
+    }
+
+    25.1% {
+        top: 100px;
+        left: 600px;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        top: 600px;
+        left: 600px;
+        transform: rotate(90deg);
+    }
+
+    50.1% {
+        bottom: 600px;
+        left: 600px;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        top: 600px;
+        left: 100px;
+        transform: rotate(180deg);
+    }
+
+    75.1% {
+        top: 600px;
+        left: 100px;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        top: 100px;
+        left: 100px;
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes eat {
+    0% {
+        opacity: 1;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,123 @@
+.move {
+  margin: 2em;
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  background-color: tomato;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 0.5em;
+  transition-property: translate();
+  transition-duration: 3s;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+  transform: translate(900px, 0);
+}
+
+/* transform */
+.transform {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  margin: 20px;
+  /* thêm cái này vào để di chuyển cho mượt*/
+  transition-duration: 1s;
+}
+
+.scale:hover {
+  transform: scale(1.5);
+  /* phóng to 1.5 lần*/
+}
+
+.translate:hover {
+  transform: translateX(500px);
+  /* dịch 500px sang phải*/
+}
+
+.rotate:hover {
+  transform: rotate(270deg);
+}
+
+.skew:hover {
+  transform: skew(15deg, 15deg);
+}
+
+/* transform-origin */
+.transform-origin {
+  width: 150px;
+  height: 150px;
+  background-color: #27ae60;
+  display: block;
+  margin: auto;
+  margin-bottom: 70px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  line-height: 150px;
+  transition: transform 1s;
+}
+
+.transform-origin:hover {
+  transform: rotate(45deg);
+}
+
+
+.top {
+  transform-origin: top;
+}
+
+.right {
+  transform-origin: right;
+}
+
+.left {
+  transform-origin: left;
+}
+
+.bottom {
+  transform-origin: bottom;
+}
+
+.top-right {
+  transform-origin: top right;
+}
+
+.top-left {
+  transform-origin: top left;
+}
+
+.bottom-right {
+  transform-origin: bottom right;
+}
+
+.bottom-left {
+  transform-origin: bottom left;
+}

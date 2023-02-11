@@ -1,0 +1,149 @@
+body{
+    overflow: hidden;
+}
+.snow{
+    position: absolute;
+    animation: snowFall 10s linear infinite, snowMove 2s ease-in-out infinite;
+}
+
+.snow:nth-child(1){
+    left: 3%;
+    animation-delay: 1s, 2s;
+}
+.snow:nth-child(2){
+    left: 6%;
+    animation-delay: 7s, 3s;
+}
+.snow:nth-child(3){
+    left: 9%;
+    animation-delay: 3s, 0s;
+}
+.snow:nth-child(4){
+    left: 12%;
+    animation-delay: 1s, .5s;
+}
+.snow:nth-child(5){
+    left: 15%;
+    animation-delay: 3s, 4s;
+}
+.snow:nth-child(6){
+    left: 18%;
+    animation-delay: 5s, 3s;
+}
+.snow:nth-child(7){
+    left: 21%;
+    animation-delay: 8s, 0s;
+}
+.snow:nth-child(8){
+    left: 24%;
+    animation-delay: 5s, .5s;
+}
+.snow:nth-child(9){
+    left: 27%;
+    animation-delay: .9s, 3s;
+}
+.snow:nth-child(10){
+    left: 30%;
+    animation-delay: 7s;
+}
+.snow:nth-child(11){
+    left: 33%;
+    animation-delay: 1s;
+}
+.snow:nth-child(12){
+    left: 36%;
+    animation-delay: .5s;
+}
+.snow:nth-child(13){
+    left: 39%;
+    animation-delay: 1s;
+}
+.snow:nth-child(14){
+    left: 42%;
+    animation-delay: .8s;
+}
+.snow:nth-child(15){
+    left: 45%;
+    animation-delay: .1s;
+}
+.snow:nth-child(16){
+    left: 48%;
+    animation-delay: 1s;
+}
+.snow:nth-child(17){
+    left: 51%;
+    animation-delay: 1s;
+}
+.snow:nth-child(18){
+    left: 54%;
+    animation-delay: 1s;
+}
+.snow:nth-child(19){
+    left: 57%;
+    animation-delay: .9s;
+}
+.snow:nth-child(20){
+    left: 60%;
+    animation-delay: 1s;
+}
+.snow:nth-child(21){
+    left: 63%;
+    animation-delay: 1s;
+}
+.snow:nth-child(22){
+    left: 66%;
+    animation-delay: .5s;
+}
+.snow:nth-child(23){
+    left: 69%;
+    animation-delay: 1s;
+}
+.snow:nth-child(24){
+    left: 72%;
+    animation-delay: .8s;
+}
+.snow:nth-child(25){
+    left: 75%;
+    animation-delay: .1s;
+}
+.snow:nth-child(26){
+    left: 78%;
+    animation-delay: 1s;
+}
+.snow:nth-child(27){
+    left: 81%;
+    animation-delay: 1s;
+}
+.snow:nth-child(28){
+    left: 84%;
+    animation-delay: 1s;
+}
+.snow:nth-child(29){
+    left: 87%;
+    animation-delay: .9s;
+}
+.snow:nth-child(30){
+    left: 90%;
+    animation-delay: 1s;
+}
+
+@keyframes snowFall {
+    0% {
+        top: -100px;
+    }
+    50% {
+        top: 50vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes snowMove {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+
+}
